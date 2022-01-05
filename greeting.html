@@ -36,7 +36,7 @@ body{
     weekday[5] = "friday";
     weekday[6] = "saturday";
 
-    var months = new Array(12);
+    var monthnames = new Array(12);
     month[1] = "january";
     month[2] = "february";
     month[3] = "march";
@@ -54,8 +54,8 @@ body{
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var monthOfYear = months[today.getMonth()];
-    var date = dayOfWeek+" " + today.getDate() +" " + monthOfYear+" " + today.getFullYear()  ;
+    var monthOfYear = monthnames[today.getMonth()];
+    var date = dayOfWeek+"," + today.getDate() + " " + monthOfYear+ " " + today.getFullYear()  ;
     
 
     var greet;
