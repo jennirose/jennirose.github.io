@@ -36,12 +36,26 @@ body{
     weekday[5] = "friday";
     weekday[6] = "saturday";
 
-    var months = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+    var months = new Array(12);
+    month[1] = "january";
+    month[2] = "february";
+    month[3] = "march";
+    month[4] = "april";
+    month[5] = "may";
+    month[6] = "june";
+    month[7] = "july";
+    month[8] = "august";
+    month[9] = "september";
+    month[10] = "october";
+    month[11] = "november";
+    month[12] = "december";
+    
     
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + (today.getMonth()+1) + today.getFullYear()  ;
+    var monthOfYear = months[today.getMonth()];
+    var date = dayOfWeek+" " + today.getDate() +" " + monthOfYear+" " + today.getFullYear()  ;
     
 
     var greet;
